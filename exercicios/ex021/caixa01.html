@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caixas</title>
+    <style>
+        body{
+            font: normal 0.8em  verdana, sans-serif;
+        }
+
+        h1{/*inline-block*/
+            font: normal 2.5em Arial, verdana, sans-serif;
+            text-align: center;
+            line-height: 150px;
+            background-color: darkgray;
+            width: 300px;
+            height: 300px; 
+
+            border-radius: 5px;
+            /*
+            border-width: 10px;
+            border-style: solid;     //config border padrão
+            border-color: red;           
+            */
+            border: 10px solid red; /*config border encurtado*/
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;   //config padding padrão
+            padding-left: 10px;
+            */
+            padding: 10px 10px 10px 10px; /*config padding encurtado*/
+
+            /*
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;    //config mardin padrão
+            margin-left: 20px;
+            */
+            margin: 20px 20px 40px 20px; /*config margin encutado*/
+
+            /*
+            outline-width: 10px;
+            outline-style: dashed;  //config outline padrão
+            outline-color: black;
+            */
+            outline: 10px dashed black; /*config outline encurtado*/
+        }
+        p{
+            text-align: justify;
+            text-indent: 20px;
+        }
+
+        a{ /*inline-level*/
+            
+            
+            border-width: 5px;
+            border-style: solid;
+            border-color: blue;
+            border-radius: 5px;
+
+            padding-top: 6px;
+            padding-right: 6px;
+            padding-bottom: 6px;
+            padding-left: 6px; 
+            
+            outline: 5px double black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixas box-level</h1>
+    <p>Paragrafos também são exemplos box-level, mais os <a href="#">links são exemplos de caixas inline-level</a> veremos como isso funciona.</p>
+</body>
+</html>

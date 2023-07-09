@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(62, 62, 62);
+        }
+        header > h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 35px;
+        }
+        header{
+            background-color: white;
+            padding: 5px;
+            margin: 3px;
+        }
+        nav {
+            background-color: lightgray;       
+            padding: 8px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.562);
+        }
+        nav > a{ 
+            display: inline-block;
+            font-weight: bold;   
+            color: black;
+            text-decoration: none;
+            margin: 0px 15px;
+      
+        }
+        nav > a:hover{          
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            text-align: justify;
+            padding: 10px;
+            margin: 15px 3px;
+            border-radius: 20px 5px;
+            box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.418);
+        }
+        section#conteudo{
+            background-color: rgb(223, 222, 222);
+            padding: 5px;
+        }
+        article > aside > p{
+            text-decoration: underline;
+            background-color: rgb(182, 182, 182);
+            width: 232px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        footer{
+            background-color: rgb(85, 85, 85);
+            color: white;
+            padding: 2px 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grupos de tags</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+            <p>Sobre o quanto eu sou foda</p>
+        </section>
+        <section id="conteudo">
+            <article>
+                <h2>Conteúdo de auto nivel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel modi rerum optio, numquam laborum ipsa obcaecati? Rem molestiae ducimus id quae vero qui perferendis labore, soluta cum, odio, distinctio at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea consectetur id. Quasi iure mollitia omnis laborum nostrum nesciunt optio deleniti. Nesciunt maxime provident iure, ad ex impedit natus atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorem non atque commodi molestiae, molestias eveniet voluptates alias impedit nobis modi eos maiores, possimus voluptatum omnis fuga et. Accusantium, natus!</p>
+                <aside>
+                    <p>Artigo feito por Fabio dos Fabios</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Feito por Fabiano da Silva Gomes</p>
+    </footer>
+
+</body>
+</html>

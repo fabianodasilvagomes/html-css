@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    font: normal 15pt arial;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+div#Video{
+    margin-top: 40px;
+    text-align: center;
+}
+p#ParaTXt{
+    margin-top: 45px;
+    color: white;
+}
