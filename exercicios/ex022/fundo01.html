@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundo em style</title>
+    <style>
+        body{
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+
+        div.caixas{
+            display: inline-block;
+            background-color: lightgray;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 200px;
+            height: 200px;
+        }
+
+        div#d1{
+            background-color: lightblue;
+        }
+
+        div#d2{ 
+            background-image: linear-gradient(to bottom, yellow, orange);
+        }
+
+        div#d3{
+            background-image: url('imagens/pattern001.png');
+        }
+
+    </style>
+</head>
+<body>
+    <div class="caixas" id="d1">
+
+    </div>
+    <div class="caixas" id="d2">
+
+    </div>
+    <div class="caixas" id="d3">
+
+    </div>
+</body>
+</html>
