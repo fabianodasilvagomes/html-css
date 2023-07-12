@@ -67,6 +67,10 @@ section {
     font-size: 3.5vw;
 }
 
+section p { 
+    padding: 0.8em;
+}
+
 section.normal {
     background-color: white;
     color: black;
