@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arila, Helvetica, sans-serif;
+        }
+        form label {
+            font-weight: bold;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+        }
+        
+        input {
+            margin-left: 5px;
+            padding: 3px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.530);
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <h2>Resultado de prova</h2>
+    <form action="formulario.php" method="post" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" placeholder="nome completo" required autocomplete="username">
+        </p>
+        <p>
+            <label for="inota">Nota:</label>
+            <input type="number" name="nota" id="inota" required min="0" max="10" placeholder="0 a 10" step=".1">
+        </p>
+        <p>
+            <label for="imes">Mes que foi feito:</label>
+            <input type="month" name="mes" id="imes" required>
+        </p>
+        <p>
+            <label for="idata">Dia que foi feito:</label>
+            <input type="date" name="data" id="idata" required>
+        </p>
+        <p>
+            <label for="ihora">Hora que foi feito:</label>
+            <input type="time" name="hora" id="ihora" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
