@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Dados do cliente</h1>
+
+    <!--ATRIBUTOS BASICOS
+        required= campo com preenchimento obrigatorio
+
+        minlength= minimo de digitos colocados
+
+        maxlength=  maximo de digitos colocados
+
+        size= quantidades de digitos a ser mostrado 
+
+        autocomplete= indicar ao usuario nome senha etc...que ele ja tenha
+        preenchido anteriormente para facilitar a velocidade de navegacao{
+            basicos:
+            username= nome que ja foi utilizado anteriormente 
+            new-password= nova senha 
+            current-password= senha ja utlizada anteriormente
+            tem muitos outros a serem utilizados
+        }
+
+        contem muito mais atributos que podem e deve ser estudados
+    -->
+
+    <form action="formulario.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Nome:</label>
+            <input type="text" name="usu" id="iusu" required placeholder="nome de usuario" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="10" placeholder="minimo 8 digito"  autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="linpar">
+        </p>
+    </form>
+</body>
+</html>
