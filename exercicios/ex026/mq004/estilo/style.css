@@ -22,7 +22,8 @@ body {
 
 main {
     background-color: rgba(255, 255, 255, 0.74);
-    width: 400px;
+    min-width: 300px;
+    max-width: 767px;
     margin: auto;
     border-radius: 10px;
     padding: 10px;
