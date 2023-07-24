@@ -1,3 +1,82 @@
 @charset "UTF-8";
 
 /*para os elementos de media query*/
+
+
+/* typical device breakpoints
+passado pelo guanabara
+
+pequnas telas
+celular = 600px até 768px
+tablet = 768 até 992px 
+desktop = 992px até 1200px
+grandes telas = acima de 1200px
+
+typical device brakpoints
+pego na internet
+
+Dispositivos móveis – 320px — 480px.
+iPads, tablets – 481px – 768px.
+Telas pequenas, laptops – 769px – 1024px.
+Desktops, telas grandes – 1025px — 1200px.
+Telas extragrandes, TV – 1201px e muito mais.
+
+texistem outros tipos de modelos na internet sobre breakpoints,
+varea bastante em todo o momento sobre o assunto.
+*/
+
+@media print { /*Impressão*/
+    * {
+        font-family:'Courier New', Courier, monospace;
+    }
+
+    body{
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    main h1 {
+        color: black;
+        box-shadow: none;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width:768px) and (max-width: 991px) { /*Tablets e ipads*/
+    body {
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*Desktops e telas*/
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) { /*Telas grandes*/
+    body {
+        background-image: url('../imagens/back-tv.jpg');
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
